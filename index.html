@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirti Rana — Creative Marketing &amp; Analytics Portfolio</title>
+  
+  <!-- Curated Google Fonts matching Invasi "Superbusy", Canva scrapbook, and Pinterest creator layouts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Caveat:wght@600;700&family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Patrick+Hand&family=Gaegu:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       ULTIMATE CREATIVE SCRAPBOOK & SUPERBUSY DESIGN SYSTEM
+       ========================================================================== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Warm organic cream & film paper tones */
+      --bg-warm: #FAF6F0;
+      --bg-cream: #F5EFEB;
+      --bg-white: #FFFFFF;
+      --paper-kraft: #F2E8DC;
+      --paper-yellow: #FFF9D6;
+      --paper-pink: #FFE8F0;
+      --paper-mint: #E4F7EC;
+      --paper-purple: #F3ECFF;
+      --paper-blue: #E8F4FD;
+      
+      /* Typography Inks */
+      --ink-dark: #231F20;
+      --ink-subtle: #5C5754;
+      --ink-muted: #8E8883;
+      --accent-pink: #E03570;
+      --accent-coral: #FF5A4E;
+      --accent-yellow: #FFB703;
+      --accent-purple: #6F42C1;
+      --accent-mint: #1B7A49;
+      --accent-blue: #0284C7;
+
+      /* Highlighters */
+      --hl-yellow: rgba(255, 235, 59, 0.55);
+      --hl-pink: rgba(255, 105, 180, 0.35);
+      --hl-mint: rgba(105, 240, 174, 0.4);
+
+      /* Natural Shadows */
+      --shadow-paper: 0 10px 30px rgba(60, 45, 35, 0.08), 0 2px 8px rgba(60, 45, 35, 0.04);
+      --shadow-polaroid: 0 15px 35px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.05);
+      --shadow-lift: 0 20px 45px rgba(60, 45, 35, 0.16), 0 8px 18px rgba(60, 45, 35, 0.08);
+
+      /* Typography Families */
+      --font-display: 'Fredoka', cursive, sans-serif;
+      --font-hand: 'Caveat', cursive;
+      --font-marker: 'Patrick Hand', cursive;
+      --font-doodle: 'Gaegu', cursive;
+      --font-typewriter: 'Space Mono', monospace;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 32px;
+      --radius-pill: 999px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-warm);
+      color: var(--ink-dark);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Tactile grid craft background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(rgba(50, 40, 30, 0.07) 1.2px, transparent 1.2px);
+      background-size: 26px 26px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ==========================================================================
+       SUPERBUSY TYPOGRAPHY & PAPERCUT ELEMENTS
+       ========================================================================== */
+    .superbusy-outline {
+      color: transparent;
+      -webkit-text-stroke: 2.5px var(--ink-dark);
+      font-family: var(--font-display);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .superbusy-outline:hover {
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    .superbusy-solid {
+      color: var(--ink-dark);
+      font-family: var(--font-display);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+
+    /* Ripped paper cutout badge */
+    .paper-strip {
+      display: inline-block;
+      background: #FFFFFF;
+      color: var(--ink-dark);
+      padding: 4px 14px;
+      font-family: var(--font-typewriter);
+      font-weight: 700;
+      font-size: 0.9em;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      transform: rotate(-1.5deg);
+      border: 1px dashed rgba(0, 0, 0, 0.15);
+      vertical-align: middle;
+      transition: transform 0.25s ease;
+    }
+
+    .paper-strip:hover {
+      transform: rotate(1deg) scale(1.06);
+    }
+
+    .pink-tape-strip {
+      display: inline-block;
+      background: #FFD4E5;
+      color: #B5174E;
+      padding: 5px 16px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.85rem;
+      box-shadow: 2px 3px 8px rgba(181, 23, 78, 0.12);
+      border-radius: 4px;
+      transform: rotate(2deg);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Realistic Washi Tape */
+    .washi-tape {
+      position: absolute;
+      width: 100px;
+      height: 26px;
+      background: rgba(255, 233, 140, 0.8);
+      border-left: 3px dashed rgba(0, 0, 0, 0.15);
+      border-right: 3px dashed rgba(0, 0, 0, 0.15);
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-2deg);
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .washi-tape-pink {
+      background: rgba(255, 182, 193, 0.85);
+      transform: translateX(-50%) rotate(2.5deg);
+    }
+
+    .washi-tape-blue {
+      background: rgba(162, 222, 255, 0.85);
+      transform: translateX(-50%) rotate(-1.5deg);
+    }
+
+    /* Realistic Metal Paperclip */
+    .paperclip-clip {
+      position: absolute;
+      width: 22px;
+      height: 55px;
+      top: -24px;
+      right: 25px;
+      border: 3.5px solid #8E8883;
+      border-radius: 12px 12px 0 0;
+      border-bottom: none;
+      z-index: 20;
+      filter: drop-shadow(2px 3px 4px rgba(0,0,0,0.2));
+    }
+
+    .paperclip-clip::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 3px;
+      width: 10px;
+      height: 40px;
+      border: 3px solid #8E8883;
+      border-radius: 8px 8px 0 0;
+      border-bottom: none;
+    }
+
+    /* Pushpin Pin */
+    .pushpin-gold {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: radial-gradient(circle at 35% 35%, #FFE082, #FFB300);
+      border-radius: 50%;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+      z-index: 20;
+    }
+
+    /* Realistic Highlighter */
+    .highlight-marker {
+      background: linear-gradient(104deg, rgba(255,235,59,0) 0.9%, var(--hl-yellow) 2.4%, var(--hl-yellow) 95%, rgba(255,235,59,0) 98%);
+      padding: 2px 6px;
+      border-radius: 4px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    .highlight-pink {
+      background: linear-gradient(104deg, rgba(255,105,180,0) 0.9%, var(--hl-pink) 2.4%, var(--hl-pink) 95%, rgba(255,105,180,0) 98%);
+    }
+
+    /* ==========================================================================
+       ANIMATIONS
+       ========================================================================== */
+    /* 1. Continuous 360 Rotating Circular Stamp */
+    .spinning-stamp-wrap {
+      position: absolute;
+      top: -20px;
+      right: -25px;
+      width: 130px;
+      height: 130px;
+      z-index: 25;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .spinning-stamp-wrap:hover {
+      transform: scale(1.15) rotate(15deg);
+    }
+
+    .spinning-stamp-svg {
+      width: 100%;
+      height: 100%;
+      animation: spinStamp 14s linear infinite;
+      filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.08));
+    }
+
+    @keyframes spinStamp {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* 2. Animated Doodle SVG Squiggle */
+    .animated-doodle-wave {
+      display: block;
+      width: 230px;
+      height: 18px;
+      margin-top: -6px;
+      overflow: visible;
+    }
+
+    .wave-path {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: drawWave 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes drawWave {
+      0% { stroke-dashoffset: 300; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    /* 3. Infinite Scrapbook Marquee */
+    .marquee-strip-outer {
+      width: 100%;
+      overflow: hidden;
+      background: #FFFFFF;
+      padding: 16px 0;
+      margin: 40px 0 20px;
+      transform: rotate(-1.5deg) scaleX(1.02);
+      border-top: 2px dashed rgba(35, 31, 32, 0.15);
+      border-bottom: 2px dashed rgba(35, 31, 32, 0.15);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      position: relative;
+      z-index: 5;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 24s linear infinite;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .marquee-items {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding-right: 28px;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .marquee-pill-pink {
+      background: var(--paper-pink);
+      color: #B5174E;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+    }
+
+    .marquee-pill-yellow {
+      background: var(--paper-yellow);
+      color: #7A5E04;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+    }
+
+    .marquee-pill-mint {
+      background: var(--paper-mint);
+      color: #126338;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+    }
+
+    .marquee-pill-purple {
+      background: var(--paper-purple);
+      color: #59359A;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+    }
+
+    .marquee-text-bold {
+      color: var(--ink-dark);
+      letter-spacing: 0.5px;
+    }
+
+    .marquee-text-outline {
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--ink-dark);
+      letter-spacing: 0.5px;
+    }
+
+    /* 4. Click Sparkle Particle Explosion */
+    .click-sparkle-particle {
+      position: fixed;
+      pointer-events: none;
+      user-select: none;
+      font-size: 1.25rem;
+      z-index: 999999;
+      transform: translate(-50%, -50%);
+      animation: sparkleFly 0.85s ease-out forwards;
+    }
+
+    @keyframes sparkleFly {
+      0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.4) rotate(var(--rot));
+      }
+    }
+
+    /* ==========================================================================
+       TOP NAVIGATION BAR
+       ========================================================================== */
+    .navbar {
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--ink-dark);
+      transition: transform 0.2s ease;
+    }
+
+    .nav-brand:hover {
+      transform: scale(1.02);
+    }
+
+    .brand-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 2px solid #FFFFFF;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-brand:hover .brand-avatar {
+      transform: rotate(-10deg);
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-tag {
+      font-family: var(--font-hand);
+      font-size: 1.2rem;
+      color: var(--accent-pink);
+      margin-left: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--ink-dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-pink);
+    }
+
+    .nav-btn {
+      background: var(--ink-dark);
+      color: #FFFFFF !important;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 0.9rem !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 12px rgba(35, 31, 32, 0.2);
+      transition: all 0.25s ease !important;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(35, 31, 32, 0.3);
+      background: var(--accent-pink) !important;
+    }
+
+    /* ==========================================================================
+       SECTION 1: HERO STAGE — SUPERBUSY & CREATOR GET TO KNOW ME
+       ========================================================================== */
+    .hero-section {
+      padding: 24px 0 40px;
+    }
+
+    .hero-invasi-sub {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .invasi-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      padding: 6px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--ink-subtle);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .hero-superbusy-headline {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .headline-line-1 {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .headline-line-2 {
+      font-size: clamp(2.6rem, 6.5vw, 5rem);
+      line-height: 1.05;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .hero-doodle-star {
+      font-size: 2.4rem;
+      color: var(--accent-yellow);
+      animation: rotateStar 8s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes rotateStar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* The Centerpiece Stage: Creator Portrait with Floating DM Bubbles & Doodles */
+    .creator-stage-wrapper {
+      position: relative;
+      max-width: 980px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 40px 40px 44px;
+      box-shadow: var(--shadow-paper);
+      border: 1px solid rgba(0,0,0,0.05);
+      overflow: visible;
+    }
+
+    .creator-stage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* Left: Portrait in aesthetic card with floating DMs */
+    .portrait-composition {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .polaroid-frame {
+      background: #FFFFFF;
+      padding: 16px 16px 32px 16px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-polaroid);
+      transform: rotate(-1.5deg);
+      max-width: 360px;
+      width: 100%;
+      position: relative;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.2s cubic-bezier(0.2, 0, 0.1, 1), box-shadow 0.2s ease;
+      will-change: transform;
+    }
+
+    .polaroid-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      filter: contrast(1.03) saturate(1.05);
+    }
+
+    .polaroid-caption {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .polaroid-caption h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .polaroid-caption span {
+      font-family: var(--font-hand);
+      font-size: 1.2rem;
+      color: var(--accent-pink);
+    }
+
+    /* Floating Instagram / DM notification pills with Physics Bobs */
+    .dm-bubble {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #FFFFFF;
+      padding: 10px 18px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      font-size: 0.85rem;
+      font-weight: 700;
+      z-index: 15;
+      white-space: nowrap;
+      border: 1px solid rgba(0,0,0,0.05);
+      animation: floatDm 4.5s ease-in-out infinite;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .dm-bubble:hover {
+      transform: scale(1.1) !important;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes floatDm {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .dm-bubble.top-left {
+      top: 15px;
+      left: -35px;
+      background: var(--paper-pink);
+      color: #B5174E;
+      animation-delay: 0s;
+    }
+
+    .dm-bubble.mid-right {
+      top: 140px;
+      right: -30px;
+      background: var(--paper-purple);
+      color: #59359A;
+      animation-delay: 1.2s;
+    }
+
+    .dm-bubble.bottom-left {
+      bottom: 50px;
+      left: -30px;
+      background: var(--paper-mint);
+      color: #126338;
+      animation-delay: 2.4s;
+    }
+
+    .dm-bubble.bottom-right {
+      bottom: -15px;
+      right: -20px;
+      background: var(--paper-yellow);
+      color: #8C6D05;
+      animation-delay: 0.8s;
+    }
+
+    .dm-icon {
+      font-size: 1.1rem;
+    }
+
+    /* Right side: Editorial text, superbusy typography & stats */
+    .creator-intro-content {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .get-to-know-title {
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--ink-dark);
+      position: relative;
+    }
+
+    .chalk-rays {
+      font-family: var(--font-hand);
+      font-size: 2.2rem;
+      color: var(--accent-yellow);
+      position: absolute;
+      top: -24px;
+      right: 40px;
+      user-select: none;
+      animation: pulseRays 3s ease-in-out infinite;
+    }
+
+    @keyframes pulseRays {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.15) rotate(5deg); opacity: 1; }
+    }
+
+    .handwritten-subtext {
+      font-family: var(--font-hand);
+      font-size: 1.55rem;
+      color: #5C5754;
+      line-height: 1.3;
+    }
+
+    .creator-bio-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .bio-tag-pill {
+      background: var(--bg-cream);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .bio-tag-pill:hover {
+      transform: translateY(-2px);
+      background: #FFE8F0;
+    }
+
+    /* Key Impact Stats Bar */
+    .impact-stats-card {
+      background: #FAF6F0;
+      border-radius: var(--radius-md);
+      padding: 18px 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      text-align: center;
+      border: 1px dashed rgba(0,0,0,0.12);
+      margin-top: 6px;
+    }
+
+    .stat-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      line-height: 1.1;
+    }
+
+    .stat-box p {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    /* Action Buttons */
+    .hero-action-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-super-pink {
+      background: linear-gradient(135deg, #FF5B84 0%, #E02868 100%);
+      color: #FFFFFF;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 20px rgba(224, 40, 104, 0.25);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-super-pink:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 30px rgba(224, 40, 104, 0.35);
+    }
+
+    .btn-super-soft {
+      background: #FFFFFF;
+      color: var(--ink-dark);
+      padding: 14px 26px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-super-soft:hover {
+      background: #FAF6F0;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       SECTION 2: 3-PANEL EDITORIAL MAGAZINE SPREAD
+       (Directly recreating panels from user's "Superbusy Activity" image)
+       ========================================================================== */
+    .magazine-spread-section {
+      padding: 50px 0;
+    }
+
+    .magazine-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .mag-panel-card {
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-paper);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 380px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mag-panel-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lift);
+    }
+
+    /* Panel 1: Studio desk & corkboard */
+    .mag-panel-studio {
+      background: linear-gradient(135deg, #FAF3EA 0%, #F0E4D3 100%);
+      border: 2px dashed rgba(60, 45, 35, 0.15);
+    }
+
+    /* Panel 2: Film rooftop "It's OK to lose yourself" */
+    .mag-panel-film {
+      background: linear-gradient(135deg, #3A4B54 0%, #25333B 100%);
+      color: #FFFFFF;
+    }
+
+    /* Panel 3: Green meadow picnic "Another Campaign" */
+    .mag-panel-nature {
+      background: linear-gradient(135deg, #3B5A45 0%, #293E30 100%);
+      color: #FFFFFF;
+    }
+
+    .panel-doodle-credit {
+      font-family: var(--font-hand);
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       SECTION 3: INTERACTIVE PHONE APP SHOWCASE
+       (Matching "Apps I Use for Editing" user image)
+       ========================================================================== */
+    .phone-showcase-section {
+      padding: 60px 0;
+    }
+
+    .phone-stage-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto 0;
+    }
+
+    /* Aesthetic smartphone frame */
+    .smartphone-device {
+      width: 320px;
+      height: 580px;
+      background: #FFFFFF;
+      border: 12px solid #F0EAE1;
+      border-radius: 46px;
+      box-shadow: 0 25px 60px rgba(60, 45, 35, 0.18), 0 5px 15px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+
+    .phone-speaker-notch {
+      width: 100px;
+      height: 18px;
+      background: #E5DFD6;
+      border-radius: 0 0 12px 12px;
+      margin: 0 auto;
+    }
+
+    .phone-inner-screen {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #FAF8F5;
+      overflow-y: auto;
+    }
+
+    .phone-search-pill {
+      background: #FFFFFF;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 14px;
+    }
+
+    .phone-app-icons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      text-align: center;
+    }
+
+    .phone-app-tile {
+      background: #FFFFFF;
+      padding: 12px 6px;
+      border-radius: 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .phone-app-tile:hover,
+    .phone-app-tile.active {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 16px rgba(224, 53, 112, 0.15);
+      border-color: var(--accent-pink);
+    }
+
+    .app-tile-icon {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .app-tile-name {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      line-height: 1.2;
+    }
+
+    .phone-live-display-card {
+      margin-top: 16px;
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.05);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Hand-drawn chalk arrows and notes pointing to the phone */
+    .phone-floating-annotation {
+      position: absolute;
+      font-family: var(--font-hand);
+      font-size: 1.45rem;
+      color: var(--accent-pink);
+      line-height: 1.2;
+      z-index: 12;
+      user-select: none;
+    }
+
+    .phone-anno-left-top {
+      top: 60px;
+      left: 20px;
+      transform: rotate(-8deg);
+    }
+
+    .phone-anno-right-top {
+      top: 80px;
+      right: 30px;
+      transform: rotate(6deg);
+    }
+
+    .phone-anno-left-bottom {
+      bottom: 80px;
+      left: 10px;
+      transform: rotate(5deg);
+    }
+
+    .phone-anno-right-bottom {
+      bottom: 60px;
+      right: 20px;
+      transform: rotate(-6deg);
+    }
+
+    /* ==========================================================================
+       SECTION 4: REAL SPIRAL NOTEBOOK WORK EXPERIENCE
+       (Recreating open planner / journal spread)
+       ========================================================================== */
+    .notebook-journal-section {
+      padding: 60px 0;
+    }
+
+    .spiral-notebook-spread {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lift);
+      border: 1px solid rgba(0,0,0,0.06);
+      display: grid;
+      grid-template-columns: 1fr 30px 1fr;
+      padding: 40px;
+      position: relative;
+      margin-top: 36px;
+    }
+
+    /* Center spiral rings */
+    .spiral-rings-spine {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+    }
+
+    .spiral-ring {
+      width: 24px;
+      height: 10px;
+      background: #C4BEB5;
+      border-radius: 6px;
+      box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3), 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .notebook-page-left,
+    .notebook-page-right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 10px 16px;
+    }
+
+    .journal-entry-card {
+      background: var(--bg-warm);
+      border-radius: var(--radius-sm);
+      padding: 20px 22px;
+      position: relative;
+      border-left: 4px solid var(--accent-pink);
+    }
+
+    .journal-entry-card h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+    }
+
+    .journal-entry-card .entry-company {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--accent-pink);
+      margin-bottom: 8px;
+    }
+
+    .journal-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .journal-bullets li {
+      font-size: 0.88rem;
+      color: var(--ink-subtle);
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .journal-bullets li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--accent-mint);
+      font-weight: bold;
+    }
+
+    /* ==========================================================================
+       SECTION 5: REAL PRACTICE SCREENSHOTS GALLERY
+       ========================================================================== */
+    .gallery-section {
+      padding: 60px 0;
+    }
+
+    .gallery-filter-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab-pill {
+      background: #FFFFFF;
+      border: 1px solid rgba(0,0,0,0.08);
+      color: var(--ink-dark);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .filter-tab-pill:hover,
+    .filter-tab-pill.active {
+      background: var(--ink-dark);
+      color: #FFFFFF;
+      border-color: var(--ink-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(35, 31, 32, 0.2);
+    }
+
+    .gallery-polaroid-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .screenshot-polaroid {
+      background: #FFFFFF;
+      padding: 14px 14px 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-polaroid);
+      border: 1px solid rgba(0,0,0,0.06);
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .screenshot-polaroid:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: var(--shadow-lift);
+    }
+
+    .screenshot-thumb-box {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #F0EDE8;
+      position: relative;
+    }
+
+    .screenshot-thumb-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .screenshot-polaroid:hover .screenshot-thumb-box img {
+      transform: scale(1.06);
+    }
+
+    .zoom-hover-hint {
+      position: absolute;
+      inset: 0;
+      background: rgba(35, 31, 32, 0.45);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .screenshot-polaroid:hover .zoom-hover-hint {
+      opacity: 1;
+    }
+
+    .screenshot-info {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .screenshot-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .screenshot-cat-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--bg-cream);
+      color: var(--ink-dark);
+    }
+
+    .screenshot-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      margin-top: 2px;
+    }
+
+    .screenshot-desc {
+      font-size: 0.82rem;
+      color: var(--ink-subtle);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       SECTION 6: VERIFIED CERTIFICATIONS & ACADEMICS
+       ========================================================================== */
+    .cert-section {
+      padding: 60px 0;
+    }
+
+    .cert-display-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 36px;
+    }
+
+    .cert-scrapbook-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-polaroid);
+      border: 1px solid rgba(0,0,0,0.06);
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+    }
+
+    .cert-scrapbook-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: var(--shadow-lift);
+    }
+
+    .cert-preview-box {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #F7F4EF;
+      border: 1px solid rgba(0,0,0,0.06);
+      position: relative;
+    }
+
+    .cert-preview-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #FFFFFF;
+      display: block;
+    }
+
+    .cert-meta-info {
+      margin-top: 16px;
+    }
+
+    .cert-meta-info h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+    }
+
+    .cert-meta-info p {
+      font-size: 0.88rem;
+      color: var(--ink-subtle);
+      margin-top: 4px;
+    }
+
+    .cert-grade-tag {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--paper-mint);
+      color: #157342;
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ==========================================================================
+       SECTION 7: CONTACT POSTCARD NOTEBOOK
+       ========================================================================== */
+    .contact-section {
+      padding: 60px 0 90px;
+    }
+
+    .postcard-contact-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-lift);
+      border: 1px solid rgba(0,0,0,0.06);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      position: relative;
+    }
+
+    .contact-left-story {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-left-story h2 {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      line-height: 1.1;
+    }
+
+    .contact-sticker-links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .contact-link-pill {
+      background: var(--bg-cream);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--ink-dark);
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .contact-link-pill:hover {
+      background: #FFFFFF;
+      transform: translateX(6px) scale(1.02);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .contact-link-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .contact-form-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--ink-subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-control {
+      background: var(--bg-warm);
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--ink-dark);
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-control:focus {
+      background: #FFFFFF;
+      border-color: var(--accent-pink);
+      box-shadow: 0 0 0 4px rgba(224, 53, 112, 0.1);
+    }
+
+    .btn-submit-contact {
+      background: var(--ink-dark);
+      color: #FFFFFF;
+      padding: 16px;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 6px 20px rgba(35, 31, 32, 0.15);
+    }
+
+    .btn-submit-contact:hover {
+      background: var(--accent-pink);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(224, 53, 112, 0.3);
+    }
+
+    /* ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(18, 16, 17, 0.88);
+      backdrop-filter: blur(10px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content-box {
+      position: relative;
+      max-width: 92vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: zoomModalIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes zoomModalIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 82vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      color: #111;
+      border: none;
+      font-size: 1.4rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      transform: scale(1.15) rotate(90deg);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .creator-stage-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .spiral-notebook-spread {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+      }
+      .spiral-rings-spine {
+        display: none;
+      }
+      .postcard-contact-card {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 32px 24px;
+      }
+      .dm-bubble {
+        display: none;
+      }
+      .phone-floating-annotation {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .creator-stage-wrapper {
+        padding: 24px 18px;
+      }
+      .polaroid-img {
+        height: 320px;
+      }
+      .impact-stats-card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .smartphone-device {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION
+       ========================================================================== -->
+  <header class="container">
+    <nav class="navbar">
+      <a href="#hero" class="nav-brand">
+        <img src="images/kirti-portrait-hero.png" alt="Kirti Rana" class="brand-avatar" />
+        <div>
+          <span class="brand-title">Kirti Rana</span>
+          <span class="brand-tag">growth &amp; analytics ✦</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#magazine">Story</a></li>
+        <li><a href="#toolkit">Phone Apps</a></li>
+        <li><a href="#experience">Journal</a></li>
+        <li><a href="#gallery">Campaigns</a></li>
+        <li><a href="#credentials">Certificates</a></li>
+        <li><a href="#contact" class="nav-btn">Let's Connect ➔</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO STAGE — SUPERBUSY & CREATOR GET TO KNOW ME
+       ========================================================================== */
+  <section id="hero" class="hero-section">
+    <div class="container">
+      
+      <!-- Invasi style sub-header -->
+      <div class="hero-invasi-sub">
+        <span class="invasi-pill">
+          <span>✹</span> INVASI STUDIO TYPEWORK PRESENT <span>✦</span>
+        </span>
+      </div>
+
+      <!-- Superbusy display headline pairing -->
+      <div class="hero-superbusy-headline">
+        <div class="headline-line-1">
+          <span class="hero-doodle-star">✹</span>
+          <span class="superbusy-outline">*SUPERBUSY*</span>
+          <span class="superbusy-solid">MARKETER</span>
+        </div>
+        <div class="headline-line-2">
+          <span class="superbusy-solid">SCALING HIGH</span>
+          <span class="superbusy-outline">ACTIVITY</span>
+          <span class="paper-strip">MBA · BVIMR</span>
+        </div>
+      </div>
+
+      <!-- The Centerpiece Creator Stage -->
+      <div class="creator-stage-wrapper">
+        <div class="washi-tape"></div>
+
+        <!-- Continuous Spinning Stamp Badge -->
+        <div class="spinning-stamp-wrap" title="Kirti Rana Verified Marketer">
+          <svg class="spinning-stamp-svg" viewBox="0 0 160 160">
+            <defs>
+              <path id="circlePath" d="M 80, 80 m -58, 0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0" />
+            </defs>
+            <circle cx="80" cy="80" r="74" fill="#FAF6F0" stroke="#231F20" stroke-width="1.8" stroke-dasharray="4 4" />
+            <circle cx="80" cy="80" r="50" fill="#FFE8F0" stroke="#E03570" stroke-width="1.5" />
+            <text font-family="'Fredoka', sans-serif" font-size="10.8" font-weight="700" fill="#231F20" letter-spacing="2.2">
+              <textPath href="#circlePath" startOffset="0%">
+                ★ PERFORMANCE MARKETING ★ KIRTI RANA ★
+              </textPath>
+            </text>
+            <text x="80" y="86" text-anchor="middle" font-size="22" fill="#E03570">♡</text>
+          </svg>
+        </div>
+
+        <div class="creator-stage-grid">
+          
+          <!-- Left: Portrait with Floating DM Bubbles -->
+          <div class="portrait-composition" id="portraitContainer">
+            <div class="polaroid-frame" id="heroPolaroid">
+              <div class="paperclip-clip"></div>
+              <img src="images/kirti-portrait-hero.png" alt="Kirti Rana" class="polaroid-img" />
+              <div class="polaroid-caption">
+                <h4>Kirti Rana</h4>
+                <span>@crumb.digiziet ♡</span>
+              </div>
+            </div>
+
+            <!-- Floating DM notification pills -->
+            <div class="dm-bubble top-left">
+              <span class="dm-icon">💬</span>
+              <span>Can you scale our Meta Ads?</span>
+            </div>
+
+            <div class="dm-bubble mid-right">
+              <span class="dm-icon">🛒</span>
+              <span>Need a custom GA4 + GTM setup!</span>
+            </div>
+
+            <div class="dm-bubble bottom-left">
+              <span class="dm-icon">💖</span>
+              <span>ROAS jumped to 3.4x! 🚀</span>
+            </div>
+
+            <div class="dm-bubble bottom-right">
+              <span class="dm-icon">📦</span>
+              <span>When can we launch our campaign?</span>
+            </div>
+          </div>
+
+          <!-- Right: Creator Intro & Real Bio -->
+          <div class="creator-intro-content">
+            <div class="pink-tape-strip">[ I'M A PERFORMANCE MARKETER ]</div>
+            
+            <h1 class="get-to-know-title">
+              get to know me!
+              <span class="chalk-rays">\ | /</span>
+            </h1>
+
+            <!-- Animated SVG Squiggle Underline -->
+            <svg class="animated-doodle-wave" viewBox="0 0 240 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="wave-path" d="M3 12C30 3 55 16 85 10C115 4 140 15 170 9C200 3 220 14 237 11" stroke="#E03570" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+
+            <p class="handwritten-subtext">
+              "I love building <span class="highlight-marker">high-converting ad funnels</span> and even better analytics dashboards ♡"
+            </p>
+
+            <p style="font-size: 0.98rem; color: var(--ink-subtle); line-height: 1.6;">
+              Specializing in full-funnel digital marketing, data-driven paid advertising (Meta &amp; Google Ads), tracking architecture (Google Tag Manager &amp; GA4), and marketing analytics with Python, SQL &amp; Power BI.
+            </p>
+
+            <!-- Bio tags -->
+            <div class="creator-bio-tags">
+              <span class="bio-tag-pill">🎯 Paid Ad Optimization</span>
+              <span class="bio-tag-pill">📊 GTM &amp; GA4 Tracking</span>
+              <span class="bio-tag-pill">📈 ROI &amp; ROAS Strategy</span>
+              <span class="bio-tag-pill">⚡ Lead Generation</span>
+            </div>
+
+            <!-- Key Impact Stats -->
+            <div class="impact-stats-card" id="statsCard">
+              <div class="stat-box">
+                <h3 class="counter-number" data-target="134" data-suffix="k+">0</h3>
+                <p>Campaign Reach</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="counter-number" data-target="1.72" data-prefix="₹">0</h3>
+                <p>Record CPR</p>
+              </div>
+              <div class="stat-box">
+                <h3 class="counter-number" data-target="3.4" data-suffix="x">0</h3>
+                <p>Avg ROAS</p>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="hero-action-buttons">
+              <a href="#contact" class="btn-super-pink">
+                <span>Let's Work Together</span>
+                <span>➔</span>
+              </a>
+              <a href="#gallery" class="btn-super-soft">
+                <span>View Live Campaigns</span>
+                <span>↓</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ANIMATION: INFINITE SCRAPBOOK TICKER MARQUEE
+       ========================================================================== -->
+  <div class="marquee-strip-outer">
+    <div class="marquee-track">
+      <div class="marquee-items">
+        <span class="marquee-pill-pink">✦ 134,000+ CAMPAIGN REACH</span>
+        <span class="marquee-text-bold">★ RECORD ₹1.72 CPR</span>
+        <span class="marquee-pill-yellow">✦ GTM &amp; GA4 SPECIALIST</span>
+        <span class="marquee-text-outline">★ 3.4X AVERAGE ROAS</span>
+        <span class="marquee-pill-mint">✦ PYTHON &amp; SQL AUTOMATION</span>
+        <span class="marquee-text-bold">★ POWER BI DASHBOARDS</span>
+        <span class="marquee-pill-purple">✦ HIGH-CONVERTING FUNNELS</span>
+        <span class="marquee-text-outline">★ DIDM GRADE A+ MASTER</span>
+      </div>
+      <div class="marquee-items" aria-hidden="true">
+        <span class="marquee-pill-pink">✦ 134,000+ CAMPAIGN REACH</span>
+        <span class="marquee-text-bold">★ RECORD ₹1.72 CPR</span>
+        <span class="marquee-pill-yellow">✦ GTM &amp; GA4 SPECIALIST</span>
+        <span class="marquee-text-outline">★ 3.4X AVERAGE ROAS</span>
+        <span class="marquee-pill-mint">✦ PYTHON &amp; SQL AUTOMATION</span>
+        <span class="marquee-text-bold">★ POWER BI DASHBOARDS</span>
+        <span class="marquee-pill-purple">✦ HIGH-CONVERTING FUNNELS</span>
+        <span class="marquee-text-outline">★ DIDM GRADE A+ MASTER</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 2: 3-PANEL EDITORIAL MAGAZINE SPREAD
+       (Matching "Superbusy Activity" 3 panels)
+       ========================================================================== -->
+  <section id="magazine" class="magazine-spread-section">
+    <div class="container">
+      
+      <div class="magazine-strip-grid">
+        
+        <!-- Panel 1: Studio desk & corkboard -->
+        <div class="mag-panel-card mag-panel-studio">
+          <div class="washi-tape washi-tape-pink"></div>
+          <div>
+            <span style="font-family: var(--font-hand); font-size: 1.3rem; color: #E03570; font-weight: 700;">✦ creative workspace</span>
+            <h3 style="font-family: var(--font-display); font-size: 2.2rem; line-height: 1.1; margin-top: 6px;">
+              SUPER PAIRING WITH FUN DISPLAY &amp; ANALYTICS
+            </h3>
+            <p style="margin-top: 14px; font-size: 0.92rem; color: var(--ink-subtle); line-height: 1.5;">
+              From high-converting ad copy to granular pixel setups, balancing right-brain storytelling with left-brain mathematical precision.
+            </p>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px;">
+            <span class="paper-strip">Meta Ads</span>
+            <span class="paper-strip">GA4 Funnels</span>
+            <span class="paper-strip">GTM Triggers</span>
+          </div>
+
+          <div class="panel-doodle-credit" style="color: var(--ink-subtle);">
+            <span>↳</span>
+            <span>Crafted by Kirti Rana · Performance Marketing 2026</span>
+          </div>
+        </div>
+
+        <!-- Panel 2: Film rooftop "It's OK to lose yourself" -->
+        <div class="mag-panel-card mag-panel-film">
+          <div class="washi-tape"></div>
+          <div>
+            <p style="font-family: var(--font-display); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; line-height: 1.35;">
+              It's OK to lose your-<br />
+              self for a <span class="paper-strip" style="color: #111; transform: rotate(-1deg);">little while.</span><br />
+              in Data, in Marketing,<br />
+              in Campaigns. Let <span class="paper-strip" style="color: #111; transform: rotate(1.5deg);">yourself</span><br />
+              scale high.
+            </p>
+          </div>
+
+          <div class="panel-doodle-credit">
+            <span>✹</span>
+            <span>SUPERBUSY ACTIVITY FONT BY INVASI STUDIO 2024</span>
+          </div>
+        </div>
+
+        <!-- Panel 3: Green meadow picnic "Another Campaign" -->
+        <div class="mag-panel-card mag-panel-nature">
+          <div class="washi-tape washi-tape-blue"></div>
+          <div>
+            <h3 style="font-size: 2.8rem; line-height: 1;">
+              <span class="superbusy-solid" style="color: #FFFFFF;">ANOTHER</span><br />
+              <span class="superbusy-outline" style="-webkit-text-stroke: 2.5px #FFFFFF; color: transparent;">CAMPAIGN</span>
+            </h3>
+            <p style="font-family: var(--font-typewriter); font-size: 0.85rem; letter-spacing: 1px; margin-top: 12px; color: #D1E7DD;">
+              REFLECTING, GOAL-SETTING, &amp; ANTICIPATING 3.4X ROAS
+            </p>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.12); padding: 14px; border-radius: 12px; margin-top: 20px;">
+            <p style="font-family: var(--font-hand); font-size: 1.3rem; color: #FFDF40;">
+              "Numbers never lie. When you test fearlessly, winning creatives reveal themselves."
+            </p>
+          </div>
+
+          <div class="panel-doodle-credit">
+            <span>♡</span>
+            <span>Reflecting on 134k+ Reach &amp; ₹1.72 CPR</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: INTERACTIVE PHONE APP SHOWCASE
+       (Matching user's "Apps I Use for Editing" inspiration)
+       ========================================================================== -->
+  <section id="toolkit" class="phone-showcase-section">
+    <div class="container">
+      
+      <div style="text-align: center;">
+        <span style="font-family: var(--font-hand); font-size: 1.5rem; color: var(--accent-pink);">✦ what's on my phone &amp; laptop? ✦</span>
+        <h2 style="font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.1; margin-top: 4px;">
+          <span class="superbusy-outline">APPS I USE</span>
+          <span class="superbusy-solid">FOR GROWTH</span>
+        </h2>
+      </div>
+
+      <div class="phone-stage-center">
+        
+        <!-- Floating handwritten annotations with arrows around the phone -->
+        <div class="phone-floating-annotation phone-anno-left-top">
+          <span>Best hacks for ROAS! ➔</span>
+        </div>
+
+        <div class="phone-floating-annotation phone-anno-right-top">
+          <span>↳ Love these tools! ♡</span>
+        </div>
+
+        <div class="phone-floating-annotation phone-anno-left-bottom">
+          <span>Zero tracking bugs ↗</span>
+        </div>
+
+        <div class="phone-floating-annotation phone-anno-right-bottom">
+          <span>↳ Swipe to inspect!</span>
+        </div>
+
+        <!-- The Interactive Smartphone Device Frame -->
+        <div class="smartphone-device">
+          <div class="phone-speaker-notch"></div>
+          
+          <div class="phone-inner-screen">
+            <!-- Search bar pill -->
+            <div class="phone-search-pill">
+              <span>🔍</span>
+              <span>How to scale brands with data?</span>
+            </div>
+
+            <!-- App icons grid -->
+            <div class="phone-app-icons-grid">
+              
+              <div class="phone-app-tile active" onclick="switchAppPreview('meta')">
+                <div class="app-tile-icon">📱</div>
+                <div class="app-tile-name">Meta Ads</div>
+              </div>
+
+              <div class="phone-app-tile" onclick="switchAppPreview('gtm')">
+                <div class="app-tile-icon">🏷️</div>
+                <div class="app-tile-name">GTM Tag</div>
+              </div>
+
+              <div class="phone-app-tile" onclick="switchAppPreview('ga4')">
+                <div class="app-tile-icon">📊</div>
+                <div class="app-tile-name">GA4 Metrics</div>
+              </div>
+
+              <div class="phone-app-tile" onclick="switchAppPreview('powerbi')">
+                <div class="app-tile-icon">📉</div>
+                <div class="app-tile-name">Power BI</div>
+              </div>
+
+              <div class="phone-app-tile" onclick="switchAppPreview('python')">
+                <div class="app-tile-icon">🐍</div>
+                <div class="app-tile-name">Python/SQL</div>
+              </div>
+
+              <div class="phone-app-tile" onclick="switchAppPreview('buffer')">
+                <div class="app-tile-icon">⚡</div>
+                <div class="app-tile-name">Buffer</div>
+              </div>
+
+            </div>
+
+            <!-- Active app metric inspection card -->
+            <div class="phone-live-display-card" id="phoneAppCard">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span id="appCardCategory" style="font-size: 0.75rem; font-weight: 700; color: #E03570; text-transform: uppercase;">Paid Media</span>
+                  <span id="appCardBadge" style="font-family: var(--font-hand); font-size: 1.1rem; color: #1B7A49;">Verified Master ✓</span>
+                </div>
+                <h4 id="appCardTitle" style="font-family: var(--font-display); font-size: 1.3rem; margin-top: 4px;">Meta Ads Manager</h4>
+                <p id="appCardDesc" style="font-size: 0.85rem; color: var(--ink-subtle); line-height: 1.4; margin-top: 6px;">
+                  Hyper-targeted custom audience scaling, lookalikes, creative fatigue testing &amp; conversion optimization.
+                </p>
+              </div>
+
+              <div style="background: #FAF6F0; padding: 10px; border-radius: 10px; margin-top: 10px; border: 1px dashed rgba(0,0,0,0.1);">
+                <span id="appCardStat" style="font-family: var(--font-typewriter); font-size: 0.85rem; font-weight: 700; color: var(--ink-dark);">
+                  134,000+ Reach @ ₹1.72 CPR
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: REAL SPIRAL NOTEBOOK WORK EXPERIENCE
+       ========================================================================== -->
+  <section id="experience" class="notebook-journal-section">
+    <div class="container">
+      
+      <div style="text-align: center;">
+        <span style="font-family: var(--font-hand); font-size: 1.5rem; color: var(--accent-pink);">✦ daily marketing entries &amp; track record ✦</span>
+        <h2 style="font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.1; margin-top: 4px;">
+          <span class="superbusy-outline">WORK EXPERIENCE</span>
+          <span class="superbusy-solid">JOURNAL</span>
+        </h2>
+      </div>
+
+      <div class="spiral-notebook-spread">
+        
+        <!-- Left notebook page -->
+        <div class="notebook-page-left">
+          
+          <div class="journal-entry-card">
+            <span class="paper-strip" style="margin-bottom: 8px;">Nov 2024 — Present</span>
+            <h4>Digital Marketing Specialist</h4>
+            <div class="entry-company">🏢 Digiziet</div>
+            <ul class="journal-bullets">
+              <li>Generated <strong>134,000+ campaign reach</strong> with an industry-leading CPR of just <strong>₹1.72</strong> on Meta Ads.</li>
+              <li>Architected end-to-end Google Tag Manager tracking pipelines to measure conversions with zero data discrepancies.</li>
+              <li>Implemented GA4 custom exploration funnels to diagnose visitor drop-off and optimize checkout conversion paths.</li>
+            </ul>
+          </div>
+
+          <div class="journal-entry-card" style="border-left-color: var(--accent-yellow);">
+            <span class="paper-strip" style="margin-bottom: 8px;">Dec 2023 — Oct 2024</span>
+            <h4>Performance Marketing Executive</h4>
+            <div class="entry-company">🏢 Yayath Buildtech</div>
+            <ul class="journal-bullets">
+              <li>Orchestrated high-ticket real estate lead generation campaigns across Meta Ads and Google Search.</li>
+              <li>Managed WhatsApp Cloud API webhooks to instantly route high-value buyer leads to sales agents in under 60 seconds.</li>
+              <li>Decreased overall customer acquisition cost (CAC) by <strong>28%</strong> through continuous negative-keyword grooming.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Center spiral rings -->
+        <div class="spiral-rings-spine">
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+          <div class="spiral-ring"></div>
+        </div>
+
+        <!-- Right notebook page -->
+        <div class="notebook-page-right">
+          
+          <div class="journal-entry-card" style="border-left-color: var(--accent-purple);">
+            <span class="paper-strip" style="margin-bottom: 8px;">Aug 2023 — Dec 2023</span>
+            <h4>Marketing &amp; Automation Associate</h4>
+            <div class="entry-company">🏢 Quickdaak</div>
+            <ul class="journal-bullets">
+              <li>Directed social media growth and content scheduling automation using Buffer.</li>
+              <li>Conducted user feedback interviews and built KPI dashboards to measure audience retention.</li>
+            </ul>
+            
+            <!-- Real team photo -->
+            <div style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); cursor: pointer;" onclick="openLightbox('images/quickdaak-team.png')">
+              <img src="images/quickdaak-team.png" alt="Quickdaak Team Photo" style="width: 100%; height: 160px; object-fit: cover; display: block;" loading="lazy" />
+            </div>
+            <span style="font-family: var(--font-hand); font-size: 1.1rem; color: #E03570; margin-top: 6px; display: block;">✦ Quickdaak team during product launch</span>
+          </div>
+
+          <!-- Academic degree highlight on notebook -->
+          <div class="journal-entry-card" style="border-left-color: var(--accent-mint);">
+            <span class="paper-strip" style="margin-bottom: 8px;">2022 — 2024</span>
+            <h4>Master of Business Administration (MBA)</h4>
+            <div class="entry-company">🎓 Bharati Vidyapeeth (BVIMR New Delhi)</div>
+            <p style="font-size: 0.88rem; color: var(--ink-subtle);">
+              Dual specialization in <strong>Marketing &amp; Analytics</strong>. Dean's list recognition for data-driven strategic marketing models.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: REAL PRACTICE CAMPAIGN SCREENSHOTS GALLERY
+       (All 12 real user campaign files with interactive zoom lightbox)
+       ========================================================================== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      
+      <div style="text-align: center; margin-bottom: 36px;">
+        <span style="font-family: var(--font-hand); font-size: 1.5rem; color: var(--accent-pink);">✦ 100% verified real execution proof ✦</span>
+        <h2 style="font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.1; margin-top: 4px;">
+          <span class="superbusy-outline">LIVE CAMPAIGN</span>
+          <span class="superbusy-solid">PRACTICE PROOF</span>
+        </h2>
+        <p style="color: var(--ink-subtle); margin-top: 10px; font-weight: 500;">
+          Click any screenshot to zoom in full-resolution modal.
+        </p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="gallery-filter-tabs">
+        <button class="filter-tab-pill active" onclick="filterGallery('all', event)">All Proof (12)</button>
+        <button class="filter-tab-pill" onclick="filterGallery('ads', event)">Meta &amp; Google Ads</button>
+        <button class="filter-tab-pill" onclick="filterGallery('tracking', event)">GTM &amp; Webhooks</button>
+        <button class="filter-tab-pill" onclick="filterGallery('social', event)">Automation &amp; Buffer</button>
+        <button class="filter-tab-pill" onclick="filterGallery('creatives', event)">Ad Creatives</button>
+      </div>
+
+      <!-- Polaroid Grid of Real User Screenshots -->
+      <div class="gallery-polaroid-grid" id="galleryGrid">
+        
+        <!-- Screenshot 1 -->
+        <div class="screenshot-polaroid" data-category="ads" onclick="openLightbox('images/custom Audience - Instagram .png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/custom Audience - Instagram .png" alt="Instagram Custom Audience" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Meta Ads</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Instagram Custom Audience</div>
+            <div class="screenshot-desc">High-intent retargeting audience configuration on Meta Ads Manager.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="screenshot-polaroid" data-category="tracking" onclick="openLightbox('images/Tag Assistant .png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/Tag Assistant .png" alt="Google Tag Assistant Live Debug" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">GTM &amp; GA4</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Tag Assistant Live Debug</div>
+            <div class="screenshot-desc">Verifying real-time Google Tag Manager triggers and GA4 event parameters.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="screenshot-polaroid" data-category="ads" onclick="openLightbox('images/Search.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/Search.png" alt="Google Search Ad Campaign" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Google Ads</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Google Search Ad Campaign</div>
+            <div class="screenshot-desc">High-intent keyword bid strategy, negative match list, and responsive search ads.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="screenshot-polaroid" data-category="social" onclick="openLightbox('images/Schedule post  .png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/Schedule post  .png" alt="Social Post Scheduling Queue" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Social Media</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Social Post Scheduling Queue</div>
+            <div class="screenshot-desc">Optimized posting times, multi-platform copy adaptation, and scheduling queue.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 5 -->
+        <div class="screenshot-polaroid" data-category="social" onclick="openLightbox('images/posting buffer.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/posting buffer.png" alt="Buffer Omnichannel Automation" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Automation</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Buffer Omnichannel Automation</div>
+            <div class="screenshot-desc">Automated content delivery across channels to sustain continuous organic reach.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 6 -->
+        <div class="screenshot-polaroid" data-category="tracking" onclick="openLightbox('images/HFCM.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/HFCM.png" alt="HFCM Script Injection Setup" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Tracking Architecture</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">HFCM Script Injection Setup</div>
+            <div class="screenshot-desc">Header &amp; Footer Code Manager script injections for pixels and analytics tags.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 7 -->
+        <div class="screenshot-polaroid" data-category="ads" onclick="openLightbox('images/Youtube.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/Youtube.png" alt="YouTube Studio & Campaign Optimization" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Video Ads</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">YouTube Studio &amp; Video Setup</div>
+            <div class="screenshot-desc">Video SEO optimization, retention analysis, and in-stream campaign targeting.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 8 -->
+        <div class="screenshot-polaroid" data-category="tracking" onclick="openLightbox('images/cloud-api.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/cloud-api.png" alt="WhatsApp Cloud API Webhook" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">API Integration</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">WhatsApp Cloud API Webhook</div>
+            <div class="screenshot-desc">Automated lead notification workflows and CRM webhook architecture.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 9 -->
+        <div class="screenshot-polaroid" data-category="creatives" onclick="openLightbox('images/1.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/1.png" alt="High-Converting Ad Creative 01" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Creative</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">High-Converting Ad Creative 01</div>
+            <div class="screenshot-desc">A/B tested visual asset crafted for maximum CTR and lower cost per conversion.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 10 -->
+        <div class="screenshot-polaroid" data-category="creatives" onclick="openLightbox('images/2.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/2.png" alt="High-Converting Ad Creative 02" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Creative</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">High-Converting Ad Creative 02</div>
+            <div class="screenshot-desc">Story format asset optimized for mobile thumb-stopping attention.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 11 -->
+        <div class="screenshot-polaroid" data-category="social" onclick="openLightbox('images/screening-test.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/screening-test.png" alt="Digital Marketing Assessment" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Assessment</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Marketing Screening Test</div>
+            <div class="screenshot-desc">Demonstrated quantitative and strategic competencies in marketing assessments.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 12 -->
+        <div class="screenshot-polaroid" data-category="social" onclick="openLightbox('images/obt-confirmation.png')">
+          <div class="pushpin-gold"></div>
+          <div class="screenshot-thumb-box">
+            <img src="images/obt-confirmation.png" alt="On-Boarding Training Confirmation" loading="lazy" />
+            <div class="zoom-hover-hint">🔍 Click to Zoom</div>
+          </div>
+          <div class="screenshot-info">
+            <div class="screenshot-badge-row">
+              <span class="screenshot-cat-badge">Milestone</span>
+              <span style="font-family: var(--font-hand); color: #E03570; font-size: 1.1rem;">Verified ✓</span>
+            </div>
+            <div class="screenshot-title">Training On-Boarding Confirmation</div>
+            <div class="screenshot-desc">Successful completion of performance campaign and analytics on-boarding.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: VERIFIED CERTIFICATIONS & ACADEMICS
+       ========================================================================== -->
+  <section id="credentials" class="cert-section">
+    <div class="container">
+      
+      <div style="text-align: center;">
+        <span style="font-family: var(--font-hand); font-size: 1.5rem; color: var(--accent-pink);">✦ accredited education &amp; certifications ✦</span>
+        <h2 style="font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 3.8rem); line-height: 1.1; margin-top: 4px;">
+          <span class="superbusy-outline">VERIFIED</span>
+          <span class="superbusy-solid">CREDENTIALS</span>
+        </h2>
+      </div>
+
+      <div class="cert-display-grid">
+        
+        <!-- Cert 1: DIDM Master in Digital Marketing (Grade A+) -->
+        <div class="cert-scrapbook-card" onclick="openLightbox('images/cert-dmm.jpg')">
+          <div class="washi-tape"></div>
+          <div class="cert-preview-box">
+            <img src="images/cert-dmm.jpg" alt="DIDM Master in Digital Marketing" loading="lazy" />
+          </div>
+          <div class="cert-meta-info">
+            <h4>Master in Digital Marketing</h4>
+            <p>Delhi Institute of Digital Marketing (DIDM)</p>
+            <span class="cert-grade-tag">Grade A+ (Distinction)</span>
+          </div>
+        </div>
+
+        <!-- Cert 2: SkillShiksha E-Commerce -->
+        <div class="cert-scrapbook-card" onclick="openLightbox('images/cert-skillshiksha.jpg')">
+          <div class="washi-tape washi-tape-pink"></div>
+          <div class="cert-preview-box">
+            <img src="images/cert-skillshiksha.jpg" alt="SkillShiksha E-Commerce & Performance Marketing" loading="lazy" />
+          </div>
+          <div class="cert-meta-info">
+            <h4>E-Commerce &amp; Performance Marketing</h4>
+            <p>SkillShiksha Professional Certification</p>
+            <span class="cert-grade-tag" style="background: var(--paper-yellow); color: #8A6504;">Verified Credential</span>
+          </div>
+        </div>
+
+        <!-- Academic Degree: MBA Marketing & Analytics -->
+        <div class="cert-scrapbook-card" style="cursor: default;">
+          <div class="washi-tape washi-tape-blue"></div>
+          <div class="cert-preview-box" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #FAF6F0 0%, #FFFFFF 100%);">
+            <span style="font-size: 3.5rem;">🎓</span>
+            <span style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin-top: 10px;">MBA (Marketing &amp; Analytics)</span>
+            <span style="font-family: var(--font-hand); font-size: 1.25rem; color: #E03570;">BVIMR New Delhi</span>
+          </div>
+          <div class="cert-meta-info">
+            <h4>Master of Business Administration</h4>
+            <p>Bharati Vidyapeeth Institute of Management &amp; Research</p>
+            <span class="cert-grade-tag" style="background: var(--paper-purple); color: #5B21B6;">Dual Specialization</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: NOTEBOOK POSTCARD CONTACT STAGE
+       ========================================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      
+      <div class="postcard-contact-card">
+        <div class="washi-tape" style="width: 140px; background: rgba(255, 233, 140, 0.85);"></div>
+
+        <!-- Left: Story & direct contact stickers -->
+        <div class="contact-left-story">
+          <div class="pink-tape-strip">[ LET'S CONNECT ]</div>
+          
+          <h2 class="superbusy-solid">
+            Let's build<br />
+            something <span class="superbusy-outline">ICONIC.</span>
+          </h2>
+
+          <p style="font-size: 1rem; color: var(--ink-subtle); line-height: 1.6;">
+            Ready to scale your Meta &amp; Google ad campaigns, fix tracking discrepancies, or build real-time executive analytics dashboards? Let's talk!
+          </p>
+
+          <div class="contact-sticker-links">
+            <a href="tel:+917683087985" class="contact-link-pill">
+              <div class="contact-link-icon">📞</div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--ink-muted); text-transform: uppercase;">Call / WhatsApp</div>
+                <div>+91 7683087985</div>
+              </div>
+            </a>
+
+            <a href="mailto:kirtirana394@gmail.com" class="contact-link-pill">
+              <div class="contact-link-icon">✉️</div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--ink-muted); text-transform: uppercase;">Direct Email</div>
+                <div>kirtirana394@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="http://www.crumb.digiziet.com" target="_blank" rel="noopener" class="contact-link-pill">
+              <div class="contact-link-icon">🌐</div>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--ink-muted); text-transform: uppercase;">Live Brand Case</div>
+                <div>www.crumb.digiziet.com</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Modern friendly contact form -->
+        <div class="contact-form-wrap">
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700;">Send a Direct Message ✦</h3>
+          
+          <form onsubmit="handleContactForm(event)">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label>Your Name</label>
+              <input type="text" class="form-control" placeholder="e.g. Rahul Sharma" required />
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label>Your Email</label>
+              <input type="email" class="form-control" placeholder="rahul@brand.com" required />
+            </div>
+
+            <div class="form-group" style="margin-bottom: 18px;">
+              <label>How can Kirti help?</label>
+              <textarea class="form-control" rows="4" placeholder="Tell me about your brand goals, ad budget, or tracking requirements..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-submit-contact">
+              <span>Send Message 🚀</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== -->
+  <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox()">
+    <div class="lightbox-content-box" onclick="event.stopPropagation()">
+      <button class="lightbox-close-btn" onclick="closeLightbox()">×</button>
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Campaign Preview" />
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS: PHONE APP SWITCHER, 3D TILT, PARTICLES, GALLERY & FORM
+       ========================================================================== -->
+  <script>
+    // 1. Gallery Category Filtering
+    function filterGallery(category, evt) {
+      const buttons = document.querySelectorAll('.filter-tab-pill');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      evt.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.screenshot-polaroid');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 2. Interactive Lightbox Modal
+    function openLightbox(imgSrc) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      img.src = imgSrc;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // 3. Interactive Phone App Switcher
+    const appData = {
+      meta: {
+        category: "Paid Media",
+        badge: "Verified Master ✓",
+        title: "Meta Ads Manager",
+        desc: "Hyper-targeted custom audience scaling, lookalikes, creative fatigue testing & conversion optimization.",
+        stat: "134,000+ Reach @ ₹1.72 CPR"
+      },
+      gtm: {
+        category: "Tracking Architecture",
+        badge: "Tag Master ✓",
+        title: "Google Tag Manager",
+        desc: "Server & client-side containers, custom variables, dataLayer pushes & zero-leak event tracking.",
+        stat: "100% Verified Tag Triggers"
+      },
+      ga4: {
+        category: "Analytics & Funnels",
+        badge: "GA4 Certified ✓",
+        title: "Google Analytics 4",
+        desc: "Exploration reports, path exploration, cohort analysis, and multi-touch attribution modeling.",
+        stat: "3.4x Average ROAS Boost"
+      },
+      powerbi: {
+        category: "Business Intelligence",
+        badge: "DAX & Dashboards ✓",
+        title: "Microsoft Power BI",
+        desc: "Executive automated reporting dashboards, DAX queries, and real-time revenue KPIs tracking.",
+        stat: "Automated Weekly ROI Reports"
+      },
+      python: {
+        category: "Data Science",
+        badge: "Python & SQL ✓",
+        title: "Python & SQL Scripts",
+        desc: "Relational database queries, data cleaning pipelines, and customer lifetime value (LTV) models.",
+        stat: "Eliminated 10hrs/wk Manual Reporting"
+      },
+      buffer: {
+        category: "Social Automation",
+        badge: "Workflow Master ✓",
+        title: "Buffer & Social Suite",
+        desc: "Multi-channel scheduling queues, peak engagement posting slots, and cross-platform distribution.",
+        stat: "24/7 Omnichannel Content Flow"
+      }
+    };
+
+    function switchAppPreview(appKey) {
+      const tiles = document.querySelectorAll('.phone-app-tile');
+      tiles.forEach(t => t.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      const data = appData[appKey];
+      if (data) {
+        document.getElementById('appCardCategory').textContent = data.category;
+        document.getElementById('appCardBadge').textContent = data.badge;
+        document.getElementById('appCardTitle').textContent = data.title;
+        document.getElementById('appCardDesc').textContent = data.desc;
+        document.getElementById('appCardStat').textContent = data.stat;
+      }
+    }
+
+    // 4. Interactive 3D Card Tilt Effect on Hero Polaroid
+    const heroCard = document.getElementById('heroPolaroid');
+    const heroContainer = document.getElementById('portraitContainer');
+
+    if (heroContainer && heroCard) {
+      heroContainer.addEventListener('mousemove', (e) => {
+        const rect = heroContainer.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        const rotateX = (-y / rect.height) * 14;
+        const rotateY = (x / rect.width) * 14;
+
+        heroCard.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
+
+      heroContainer.addEventListener('mouseleave', () => {
+        heroCard.style.transform = 'perspective(800px) rotate(-1.5deg) scale(1)';
+      });
+    }
+
+    // 5. Click Sparkle Particle Explosion
+    const sparkleEmojis = ['✦', '★', '♡', '🌸', '✨', '✹', '💖'];
+    document.addEventListener('click', (e) => {
+      if (['INPUT', 'TEXTAREA', 'BUTTON'].includes(e.target.tagName)) return;
+
+      for (let i = 0; i < 6; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'click-sparkle-particle';
+        particle.textContent = sparkleEmojis[Math.floor(Math.random() * sparkleEmojis.length)];
+        
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 40 + Math.random() * 60;
+        const dx = Math.cos(angle) * distance + 'px';
+        const dy = Math.sin(angle) * distance + 'px';
+        const rot = (Math.random() * 360 - 180) + 'deg';
+        
+        particle.style.left = e.clientX + 'px';
+        particle.style.top = e.clientY + 'px';
+        particle.style.setProperty('--dx', dx);
+        particle.style.setProperty('--dy', dy);
+        particle.style.setProperty('--rot', rot);
+        particle.style.color = ['#E03570', '#FFB703', '#6F42C1', '#1B7A49', '#0284C7'][i % 5];
+        
+        document.body.appendChild(particle);
+        setTimeout(() => particle.remove(), 850);
+      }
+    });
+
+    // 6. Animated Number Counters on Scroll
+    let animatedCounters = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animatedCounters) {
+          animatedCounters = true;
+          document.querySelectorAll('.counter-number').forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target'));
+            const prefix = counter.getAttribute('data-prefix') || '';
+            const suffix = counter.getAttribute('data-suffix') || '';
+            const isDecimal = target % 1 !== 0;
+            const duration = 1400;
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const currentVal = easeProgress * target;
+
+              counter.textContent = prefix + (isDecimal ? currentVal.toFixed(2) : Math.floor(currentVal)) + suffix;
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = prefix + (isDecimal ? target.toFixed(2) : target) + suffix;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    const statsCardEl = document.getElementById('statsCard');
+    if (statsCardEl) statsObserver.observe(statsCardEl);
+
+    // 7. Contact Form feedback
+    function handleContactForm(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const oldHtml = btn.innerHTML;
+      btn.innerHTML = "<span>✓ Message Sent Successfully!</span>";
+      btn.style.background = "#1B7A49";
+      setTimeout(() => {
+        btn.innerHTML = oldHtml;
+        btn.style.background = "";
+        e.target.reset();
+      }, 3500);
+    }
+  </script>
+
+</body>
+</html>
